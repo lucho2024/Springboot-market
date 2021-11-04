@@ -7,26 +7,25 @@ import java.io.Serializable;
 
 @Embeddable
 public class ComprasProductoPk  implements Serializable {
+    @Column(name = "id_compra")
+    private Integer idCompra;
 
-    @Column(name="id_compra")
-    private Long idCompra;
+    @Column(name = "id_producto")
+    private Integer idProducto;
 
-    @Column(name="id_producto")
-    private Long idProducto;
-
-    public Long getIdCompra() {
+    public Integer getIdCompra() {
         return idCompra;
     }
 
-    public void setIdCompra(Long idCompra) {
+    public void setIdCompra(Integer idCompra) {
         this.idCompra = idCompra;
     }
 
-    public Long getIdProducto() {
+    public Integer getIdProducto() {
         return idProducto;
     }
 
-    public void setIdProducto(Long idProducto) {
+    public void setIdProducto(Integer idProducto) {
         this.idProducto = idProducto;
     }
 }
